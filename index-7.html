@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHADO PREMIUM — Commander</title>
+<meta name="description" content="SHADO PREMIUM — Films, séries, sport et divertissement. Commande par WhatsApp. Paiement MTN ou Moov.">
+<style>
+:root{--bg:#070a12;--panel:#101624;--gold:#d8ad4b;--gold2:#f4d47a;--text:#f7f8fb;--muted:#aeb7c8;--wa:#25D366}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 75% 15%,#17213a 0,#070a12 45%);color:var(--text)} a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:5;background:rgba(7,10,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(216,173,75,.15)}
+.nav{max-width:1180px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;letter-spacing:.06em;font-size:20px} .logo span{color:var(--gold2)} .mini{font-size:11px;color:var(--gold);letter-spacing:.18em;display:block;margin-top:2px}
+.navlinks{display:flex;gap:22px;color:#dbe1ec;font-size:14px} .navlinks a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:.2s}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#111;box-shadow:0 10px 30px rgba(216,173,75,.2)}
+.btn-gold:hover{transform:translateY(-2px)} .btn-wa{background:var(--wa);color:#061008;box-shadow:0 10px 28px rgba(37,211,102,.18)}
+main{max-width:1180px;margin:auto;padding:34px 22px 70px}
+.hero{min-height:600px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.eyebrow{color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+h1{font-size:clamp(48px,8vw,92px);line-height:.9;margin:16px 0 20px;letter-spacing:-.06em} h1 span{color:var(--gold2)}
+.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.price{display:inline-flex;align-items:baseline;gap:7px;color:var(--gold2);font-weight:900;font-size:32px;margin:8px 0}
+.price small{font-size:13px;color:var(--muted);font-weight:600}
+.visual{position:relative;min-height:460px;border:1px solid rgba(216,173,75,.18);border-radius:34px;background:linear-gradient(145deg,#111a2b,#080b12);overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.tv{position:absolute;left:10%;right:10%;top:12%;height:58%;border:9px solid #1d2534;border-radius:20px;background:linear-gradient(135deg,#17233d,#05070c);box-shadow:0 18px 50px #000}
+.tv:after{content:"SHADO PREMIUM";position:absolute;top:18px;left:22px;color:var(--gold2);font-weight:900;letter-spacing:.12em;font-size:12px}
+.screen{position:absolute;inset:20% 9% 9%;border-radius:12px;background:linear-gradient(120deg,#28385b,#101522 55%,#6c4d1e);display:flex;align-items:flex-end;padding:18px}
+.screen strong{font-size:26px} .screen small{display:block;color:#cbd2df;margin-top:5px}
+.devices{position:absolute;bottom:7%;left:12%;right:12%;display:flex;justify-content:space-between;align-items:flex-end}
+.phone,.tablet{background:#111826;border:4px solid #252f40;border-radius:18px;box-shadow:0 18px 35px #000}
+.phone{width:78px;height:145px} .tablet{width:180px;height:112px;border-radius:14px}
+.badge{position:absolute;right:6%;top:7%;background:#0d131f;border:1px solid rgba(216,173,75,.35);padding:10px 14px;border-radius:14px;color:var(--gold2);font-weight:800;font-size:13px}
+.section{padding:68px 0} .section h2{font-size:36px;margin:0 0 12px} .section>p{color:var(--muted);max-width:720px;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px} .card{padding:26px;border-radius:22px;background:rgba(16,22,36,.85);border:1px solid rgba(255,255,255,.06)} .icon{font-size:28px} .card h3{margin:15px 0 8px} .card p{color:var(--muted);line-height:1.6;margin:0}
+.payment{margin-top:28px;padding:28px;border-radius:24px;background:linear-gradient(135deg,#111a2b,#0b0f18);border:1px solid rgba(216,173,75,.2);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.methods{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px} .method{padding:9px 13px;border-radius:999px;background:#171f2e;border:1px solid rgba(255,255,255,.08);font-weight:800} .mtn{color:#ffd500} .moov{color:#58a6ff}
+footer{border-top:1px solid rgba(255,255,255,.06);padding:28px 22px;color:#7f899b;text-align:center;font-size:13px}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.navlinks{display:none}.cards{grid-template-columns:1fr}.payment{flex-direction:column;align-items:flex-start}.visual{min-height:390px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="#"><span>SHADO</span> PREMIUM <small class="mini">VOTRE DIVERTISSEMENT</small></a>
+    <nav class="navlinks">
+      <a href="#offres">Nos offres</a><a href="#appareils">Appareils</a><a href="#commande">Commande</a>
+    </nav>
+    <a class="btn btn-gold" href="javascript:void(0)" onclick="openWhatsApp()">💬 COMMANDER</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="commande">
+  <div>
+    <div class="eyebrow">VOTRE DIVERTISSEMENT SANS LIMITES</div>
+    <h1>SHADO <span>PREMIUM</span></h1>
+    <p class="lead">Une expérience pensée pour profiter de vos contenus préférés sur vos écrans. Pour commander, contactez-nous directement sur WhatsApp.</p>
+    <div class="price">5 000 <small>FCFA</small></div>
+    <div class="actions">
+      <a class="btn btn-wa" href="javascript:void(0)" onclick="openWhatsApp()">💬 COMMANDER SUR WHATSAPP</a>
+      <a class="btn" style="border-color:rgba(216,173,75,.35);color:var(--gold2)" href="#offres">Découvrir l’offre</a>
+    </div>
+    <p style="font-size:13px;color:#8f99aa">Paiement communiqué après contact : <b style="color:#ffd500">MTN</b> ou <b style="color:#58a6ff">Moov</b>.</p>
+  </div>
+  <div class="visual" aria-label="Présentation visuelle SHADO PREMIUM">
+    <div class="badge">PREMIUM • 5 000 FCFA</div>
+    <div class="tv"><div class="screen"><div><strong>Votre univers de divertissement</strong><small>Films • Séries • Sport • TV</small></div></div></div>
+    <div class="devices"><div class="phone"></div><div class="tablet"></div><div class="phone"></div></div>
+  </div>
+</section>
+
+<section class="section" id="offres">
+  <div class="eyebrow">L’ESSENTIEL</div>
+  <h2>Tout commence par WhatsApp.</h2>
+  <p>Un parcours simple : vous cliquez sur « COMMANDER SUR WHATSAPP », vous indiquez l’offre souhaitée, puis nous vous communiquons les instructions de paiement MTN ou Moov.</p>
+  <div class="cards">
+    <article class="card"><div class="icon">🎬</div><h3>Cinéma</h3><p>Une présentation dédiée aux films et aux contenus cinéma.</p></article>
+    <article class="card"><div class="icon">⚽</div><h3>Sport</h3><p>Un espace pensé pour les amateurs de sport et de direct.</p></article>
+    <article class="card"><div class="icon">📺</div><h3>Divertissement</h3><p>Une expérience adaptée au téléphone, à la tablette et à la TV connectée.</p></article>
+  </div>
+</section>
+
+<section class="section" id="appareils">
+  <div class="eyebrow">MULTI-APPAREILS</div>
+  <h2>Votre écran, votre choix.</h2>
+  <p>Téléphone, tablette, ordinateur ou TV connectée : l’interface est conçue pour s’adapter à différents écrans.</p>
+  <div class="payment">
+    <div>
+      <strong style="font-size:20px">💳 Paiement après contact</strong>
+      <div class="methods"><span class="method mtn">MTN Mobile Money</span><span class="method moov">Moov Money</span></div>
+    </div>
+    <a class="btn btn-wa" href="javascript:void(0)" onclick="openWhatsApp()">COMMANDER</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 SHADO PREMIUM — Contact et commande via WhatsApp</footer>
+
+<script>
+function openWhatsApp() {
+  const message = "Bonjour 👋 Je suis intéressé par SHADO PREMIUM.\nJe voudrais connaître les offres disponibles et les tarifs, s’il vous plaît.";
+  const encoded = encodeURIComponent(message);
+  const phone = '2250575053228';
+  const webUrl = 'https://wa.me/' + phone + '?text=' + encoded;
+  const isAndroid = /Android/i.test(navigator.userAgent);
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  // Sur Android, l'intent demande directement à Chrome d'ouvrir l'application WhatsApp.
+  if (isAndroid) {
+    const intentUrl = 'intent://send?phone=' + phone + '&text=' + encoded + '#Intent;scheme=whatsapp;package=com.whatsapp;end';
+    let fallback = setTimeout(() => { window.location.href = webUrl; }, 1800);
+    window.location.href = intentUrl;
+    window.addEventListener('pagehide', () => clearTimeout(fallback), {once:true});
+    return;
+  }
+
+  // Sur iPhone/iPad, le schéma WhatsApp tente d'ouvrir l'application.
+  if (isIOS) {
+    let fallback = setTimeout(() => { window.location.href = webUrl; }, 1800);
+    window.location.href = 'whatsapp://send?phone=' + phone + '&text=' + encoded;
+    window.addEventListener('pagehide', () => clearTimeout(fallback), {once:true});
+    return;
+  }
+
+  window.location.href = webUrl;
+}
+</script>
+</body>
+</html>
